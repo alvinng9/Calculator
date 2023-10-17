@@ -2,55 +2,40 @@
 <html>
   <head>
     <title>Calculator</title>
-    <style>
-      .button{
-        width: 41px;
-        height: 41px;
-        text-align: center;
-      }
-      .clear{
-        width: 175px;
-        height: 41px;
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="styles/calculator.css">
   </head>
   <body>
-    <div class="container">
-      <div class="calculator">
-        <form>
-          <div class="result">
-            <input type="text" name="result">
-          </div>
-          <div>
-            <input type="button" class="button" value="7" onclick="result.value += '7' ">
-            <input type="button" class="button" value="8" onclick="result.value += '8' ">
-            <input type="button" class="button" value="9" onclick="result.value += '9' ">
-            <input type="button" class="button" value="÷" onclick="result.value += '÷' ">
-          </div>
-          <div>
-            <input type="button" class="button" value="4" onclick="result.value += '4' ">
-            <input type="button" class="button" value="5" onclick="result.value += '5' ">
-            <input type="button" class="button" value="6" onclick="result.value += '6' ">
-            <input type="button" class="button" value="X" onclick="result.value += '*' ">
-          </div>
-          <div>
-            <input type="button" class="button" value="1" onclick="result.value += '1' ">
-            <input type="button" class="button" value="2" onclick="result.value += '2' ">
-            <input type="button" class="button" value="3" onclick="result.value += '3' ">
-            <input type="button" class="button" value="-" onclick="result.value += '-' ">
-          </div>
-          <div>
-            <input type="button" class="button" value="0" onclick="result.value += '0' ">
-            <input type="button" class="button" value="." onclick="result.value += '.' ">
-            <input type="button" class="button" value="=" onclick="result.value = eval(result.value)">
-            <input type="button" class="button" value="+" onclick="result.value += '+' ">
-          </div>
-          <div>
-            <input type="button" class="clear" value = "Clear" onclick="result.value = '0'">
-          </div>
-    <script>
-      let cal = 0;
-    </script>
+    <p class="input-field js-input"></p>
+    <div>
+      <button class="button-grey js-reset">AC</button>
+      <button class="button-grey js-postive-negative">+/-</button>
+      <button class="button-grey js-percent">%</button>
+      <button class="button-orange js-divide">÷</button>
+    </div>
+    <div>
+      <button class="button-num js-seven">7</button>
+      <button class="button-num js-eight">8</button>
+      <button class="button-num js-nine">9</button>
+      <button class="button-orange js-multiply">X</button>
+    </div>
+    <div>
+      <button class="button-num js-four">4</button>
+      <button class="button-num js-five">5</button>
+      <button class="button-num js-six">6</button>
+      <button class="button-orange js-subtract">-</button>
+    </div>
+    <div>
+      <button class="button-num js-one">1</button>
+      <button class="button-num js-two">2</button>
+      <button class="button-num js-three">3</button>
+      <button class="button-orange js-add">+</button>
+    </div>
+    <div>
+      <button class="button-zero js-zero">0</button>
+      <button class="button-num js-decimal">.</button>
+      <button class="button-orange js-calculate">=</button>
+    </div>
+
+    <script src="scripts/calculator.js"></script>
   </body>
 </html>
